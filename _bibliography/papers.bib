@@ -1,84 +1,124 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@STRING{CVPR = {Proc. IEEE Conf. on Computer Vision and Pattern	Recognition (CVPR)}}
+@STRING{ECCV = {Proc. of the European Conf. on Computer Vision (ECCV)}}
+@STRING{ICCV = {Proc. of the IEEE International Conf. on Computer Vision (ICCV)}}
+@STRING{ICRA = {Proc. of the IEEE International Conf. on Robotics and Automation (ICRA)}}
+@STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
+@STRING{TIP = {IEEE Trans. on  Image Processing (TIP)}}
+@STRING{TPAMI = {IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI)}}
+@STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
+@STRING{ARXIV = {arXiv.org}}
+@STRING{WACV = {Proc. of the IEEE Winter Conf. on Applications of Computer Vision (WACV)}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
+@article{VeRi3D,
+  %abbr={PhysRev},
+  title={VeRi3D: Generative Vertex-based Radiance Fields for 3D Controllable Human Image Synthesis},
+  %author={Einstein, A. and Podolsky, B. and Rosen, N.},
+  %author={Xinya Chen and Jiaxin Huang and Yanrui Bin and Lu Yu and Yiyi Liao<sup>&#x0266F;</sup>},
+  author={Chen, Xinya and Huang, Jiaxin and Bin, Yanrui and Yu, Lu and Liao, Yiyi<sup>&#x0266F;</sup>},
+  abstract={Unsupervised learning of 3D-aware generative adversarial networks has lately made much progress. Some recent work demonstrates promising results of learning human generative models using neural articulated radiance fields, yet their generalization ability and controllability lag behind parametric human models, i.e., they do not perform well when generalizing to novel pose/shape and are not part controllable. To solve these problems, we propose VeRi3D, a generative human vertex-based radiance field parameterized by vertices of the parametric human template, SMPL. We map each 3D point to the local coordinate system defined on its neighboring vertices, and use the corresponding vertex feature and local coordinates for mapping it to color and density values. We demonstrate that our simple approach allows for generating photorealistic human images with free control over camera pose, human pose, shape, as well as enabling part-level editing.},
+  journal=ICCV,
+  %volume={47},
+  %issue={10},
+  %pages={777--780},
+  %numpages={0},
+  year={2023},
+  %month={May},
   publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
+  %doi={10.1103/PhysRev.47.777},
+  %url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+  %html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+  pdf={05561.pdf},
+  %altmetric={248277},
   dimensions={true},
+  %bibtex_show={true},
+  %teaser = {teaser_demo.jpg},
+  preview={teaser_demo.jpg},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{ADAP,
+  title={Adversarial semantic data augmentation for human pose estimation},
+  %author={Yanrui Bin and Xuan Cao and Xinya Chen and Yanhao Ge and Ying Tai and Chengjie Wang and Jilin Li and Feiyue Huang and Changxin Gao and Nong Sang},
+  author={Bin, Yanrui and Xuan Cao and Chen, Xinya and Yanhao Ge and Ying Tai and Chengjie Wang and Jilin Li and Feiyue Huang and Changxin Gao and Sang, Nong<sup>&#x0266F;</sup>},
+  abstract={Human pose estimation is the task of localizing body keypoints from still images. The state-of-the-art methods suffer from insufficient examples of challenging cases such as symmetric appearance,
+heavy occlusion and nearby person. To enlarge the amounts of challenging cases, previous methods augmented images by cropping and pasting
+image patches with weak semantics, which leads to unrealistic appearance and limited diversity. We instead propose Semantic Data Augmentation (SDA), a method that augments images by pasting segmented body
+parts with various semantic granularity. Furthermore, we propose Adversarial Semantic Data Augmentation (ASDA), which exploits a generative
+network to dynamiclly predict tailored pasting configuration. Given offthe-shelf pose estimation network as discriminator, the generator seeks
+the most confusing transformation to increase the loss of the discriminator while the discriminator takes the generated sample as input and
+learns from it. The whole pipeline is optimized in an adversarial manner. State-of-the-art results are achieved on challenging benchmarks. The
+code has been publicly available at https://github.com/Binyr/ASDA.},
+  journal = ECCV,
+  year={2020},
+  publisher=aps,
+  pdf={https://arxiv.org/abs/2008.00697},
+  dimensions={true},
+  %preview={teaser_demo.jpg},
+  preview={adas_all.png},
+  selected={true}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{Structure,
+  title={Structure-aware human pose estimation with graph convolutional networks},
+  %author={Yanrui Bin and Xuan Cao and Xinya Chen and Yanhao Ge and Ying Tai and Chengjie Wang and Jilin Li and Feiyue Huang and Changxin Gao and Nong Sang},
+  author={Bin, Yanrui and Zhao-Min Chen and Xiu-Shen Wei and Chen, Xinya and Changxin Gao and Sang, Nong<sup>&#x0266F;</sup>},
+  abstract={Human pose estimation is the task of localizing body key points from still images. As body key points are inter-connected, it is desirable to model the structural relationships between body key points to further improve the localization performance. In this paper, based on original graph convolutional networks, we propose a novel model, termed Pose Graph Convolutional Network (PGCN), to exploit these important relationships for pose estimation. Specifically, our model builds a directed graph between body key points according to the natural compositional model of a human body. Each node (key point) is represented by a 3-D tensor consisting of multiple feature maps, initially generated by our backbone network, to retain accurate spatial information. Furthermore, attention mechanism is presented to focus on crucial edges (structured information) between key points. PGCN is then learned to map the graph into a set of structure-aware key point representations which encode both structure of human body and appearance information of specific key points. Additionally, we propose two modules for PGCN, i.e., the Local PGCN (L-PGCN) module and Non-Local PGCN (NL-PGCN) module. The former utilizes spatial attention to capture the correlations between the local areas of adjacent key points to refine the location of key points. While the latter captures long-range relationships via non-local operation to associate the challenging key points. By equipping with these two modules, our PGCN can further improve localization performance. Experiments both on single- and multi-person estimation benchmark datasets show that our method consistently outperforms competing state-of-the-art methods.},
+  journal = {Pattern Recognition},
+  year={2020},
+  publisher=aps,
+  pdf={Structure-aware human pose estimation with graph convolutional networks.pdf},
+  dimensions={true},
+  %preview={teaser_demo.jpg},
+  preview={pr.jpg},
+  selected={true}
 }
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{RRPN,
+  title={Relevant region prediction for crowd counting},
+  %author={Yanrui Bin and Xuan Cao and Xinya Chen and Yanhao Ge and Ying Tai and Chengjie Wang and Jilin Li and Feiyue Huang and Changxin Gao and Nong Sang},
+  author={Chen, Xinya and Bin, Yanrui and Gao, Changxin and Sang, Nong<sup>&#x0266F;</sup> and Hao Tang},
+  abstract={Crowd counting is a concerned and challenging task in computer vision. Existing density map based methods excessively focus on the individuals’ localization which harms the crowd counting performance in highly congested scenes. In addition, the dependency between the regions of different density is also ignored. In this paper, we propose Relevant Region Prediction (RRP) for crowd counting, which consists of the Count Map and the Region Relation-Aware Module (RRAM). Each pixel in the count map represents the number of heads falling into the corresponding local area in the input image, which discards the detailed spatial information and forces the network pay more attention to counting rather than localizing individuals. Based on the Graph Convolutional Network (GCN), Region Relation-Aware Module is pro- posed to capture and exploit the important region dependency. The module builds a fully connected directed graph between the regions of different density where each node (region) is represented by weighted global pooled feature, and GCN is learned to map this region graph to a set of relation-aware regions representations. Experimental results on three datasets show that our method obviously outper- forms other existing state-of-the-art methods.},
+  journal = {Neurocomputing},
+  year={2020},
+  publisher=aps,
+  pdf={Relevant-region-prediction-for-crowd-counting_2020_Neurocomputing.pdf},
+  dimensions={true},
+  %preview={teaser_demo.jpg},
+  preview={rrpn_pipeline.png},
+  selected={true}
 }
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{SPN,
+  title={Scale Pyramid Network for Crowd Counting},
+  %author={Yanrui Bin and Xuan Cao and Xinya Chen and Yanhao Ge and Ying Tai and Chengjie Wang and Jilin Li and Feiyue Huang and Changxin Gao and Nong Sang},
+  author={Chen, Xinya and Bin, Yanrui and Sang, Nong<sup>&#x0266F;</sup> and Gao, Changxin},
+  abstract={Crowd counting is a concerned yet challenging task in
+computer vision. The difficulty is particularly pronounced
+by scale variations in crowd images. Most state-of-art approaches tackle the multi-scale problem by adopting multicolumn CNN architectures where different columns are designed with different filter sizes to adapt to variable pedestrian/object sizes. However, the structure is bloated and inefficient, and it is infeasible to adopt multiple deep columns
+due to the huge resource cost. We instead propose a Scale
+Pyramid Network (SPN) which adopts a shared single deep
+column structure and extracts multi-scale information in
+high layers by Scale Pyramid Module. In Scale Pyramid
+Module, we specifically employ different rates of dilated
+convolutions in parallel instead of traditional convolutions
+with different sizes. Compared to other methods of coping
+with scale issues, our single column structure with Scale
+Pyramid Module can get more accurate estimation with
+simpler structure and less complexity of training. And our
+Scale Pyramid Module can be easily applied to a deep network. Experimental results on four datasets show that our
+method achieves state-of-the-art performance. On ShanghaiTech Part A dataset which is challenging for its highly
+congested scenes and scale variation, we achieve {9.5%}
+lower MAE and {13.5%} lower MSE than the previous stateof-the-art method. We also extend our model on TRANCOS vehicle counting dataset and significantly achieve
+{5.9%} lower GAME(0), {10%} lower GAME(1), {24.5%} lower
+GAME(2), {38.7%} lower GAME(3) than the previous stateof-the-art method. The experimental results prove the robustness of our model for crowd counting, especially with
+scale variations.},
+  journal = WACV,
+  year={2019},
+  publisher=aps,
+  pdf={Scale_Pyramid_Network_for_Crowd_Counting.pdf},
+  dimensions={true},
+  %preview={teaser_demo.jpg},
+  preview={crowd_counting.jpg},
+  selected={true}
 }

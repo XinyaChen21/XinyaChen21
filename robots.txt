@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://XinyaChen21.github.io/sitemap.xml

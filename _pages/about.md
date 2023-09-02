@@ -26,4 +26,4 @@ My research interest lies in **3D computer vision**, including **neural renderin
  <!-- My past research also involves building human-level intelligent systems, including 3D human pose and shape estimation, 2d human pose estimation and crowd counting. -->
 <!-- My research interest lies in neural rendering, including 3d-aware generative model for human and in the wild objects. -->
 
-**<font color="#dd0000">I am seeking for a Ph.D. position!</font>** ([email](hust.xinyachen@gmail.com))
+**<font color="#dd0000">I am seeking for a Ph.D. position!</font>**

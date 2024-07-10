@@ -25,5 +25,3 @@ I am a research assistant in [Zhejiang University](https://en.wikipedia.org/wiki
 My research interest lies in **3D computer vision**, including **neural rendering**, **3d generative models for humans** and **in-the-wild objects**.
  <!-- My past research also involves building human-level intelligent systems, including 3D human pose and shape estimation, 2d human pose estimation and crowd counting. -->
 <!-- My research interest lies in neural rendering, including 3d-aware generative model for human and in the wild objects. -->
-
-**<font color="#dd0000">I am actively seeking a Ph.D. position or research internship opportunity!</font>**
